@@ -21,7 +21,7 @@ class MyThread extends Thread{
 // while thread1 is being perfomed main thread is still going down will start another thread
 // now both thread will run is parallel
 
-public class Main{
+public class UsingExtendingThread{
     public static void main(String[] args){
         // The main thread will create two thread objects
         MyThread thread1 = new MyThread();
@@ -32,3 +32,7 @@ public class Main{
         thread2.start();
     }
 }
+
+
+
+// there is problem with extending thread class as java does not allow extending multiple classes
